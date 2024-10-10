@@ -11,7 +11,7 @@ const databaseUrl = process.env.CONNECTIONSTRING;
 connectTOMongoDB(databaseUrl).then(()=> console.log('Mongodb connected'));
 app.use(express.json());
 app.all('*', function(req, res) {
-  res.send("This is the Home page please use an actual API");
+  res.send("This is the Home page please use an actual API  --- Made by srikanth Surna");
 });
 app.use('/url',urlRoute);
 app.get('/:shortId',async (req,res)=>{
